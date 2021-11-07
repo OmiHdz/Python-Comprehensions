@@ -96,7 +96,7 @@ def run():
         print(worker)
 
 def reto():
-    #hig order functions
+    #high order functions
     all_python_devs = list(filter(lambda worker: worker["language"] == "python", DATA))
     all_python_devs = list(map(lambda worker: worker ["name"],all_python_devs))
     

@@ -29,22 +29,18 @@ def reduce_example():
     print(multiplied_reduce)
 
 
-def example():
-     orders = [
-        {product: 'Pizza al carbon', total: 3, date: '2019-08-12'},
-        {product: 'Pizza de queso', total: 10, date: '2019-08-12'},
-        {product: 'Pizza de 3 ingredientes', total: 5, date: '2019-08-12'},
-        {product: 'Especial del chef', total: 30, date: '2019-08-12'},
-        {product: 'Especial del chef', total: 3, date: '2019-08-13'},
-        {product: 'Pizza al carbon', total: 10, date: '2019-08-14'},
-    ]
-     totals = orders.reduce(
-        (previous, order) =>
-           Object.assign({}, previous, {
-            [order.product]: (previous[order.product] | | 0) + order.total,
-        }),
-    {}
-    )
+# def example():
+#      orders = [
+#         {"product": 'Pizza al carbon', "total": 3, "date": '2019-08-12'},
+#         {"product": 'Pizza de queso', "total": 10, "date": '2019-08-12'},
+#         {"product": 'Pizza de 3 ingredientes', "total": 5, "date": '2019-08-12'},
+#         {"product": 'Especial del chef', "total": 30, "date": '2019-08-12'},
+#         {"product": 'Especial del chef', "total": 3, "date": '2019-08-13'},
+#         {"product": 'Pizza al carbon', "total": 10, "date": '2019-08-14'},
+#     ]
+#      totals = orders.reduce((previous, order) => Object.assign({}, previous, {
+#             [order.product]: (previous[order.product] | | 0) + order.total,
+#         }),{})
 
 if __name__ == "__main__":
     # Map()
